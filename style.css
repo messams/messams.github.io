@@ -32,6 +32,8 @@ body {
 }
 
 header {
+    border-bottom: #000000 1px solid;
+    margin-bottom: 1px;
     position: relative;
     background-color: #ffffff;
     justify-content: space-between;
@@ -52,7 +54,16 @@ header h3 {
     font-size: 1.2em;
     color: gray;
 }
-
+footer {
+    margin-top: 1px;
+    border-top: #000000 1px solid;
+    position: relative;
+    font-style: italic;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    text-align: center;
+}
 .main-container {
     position: relative;
     background: #ffffff;
@@ -166,14 +177,14 @@ section .title {
     margin-left: 0px; /* Adds space between the project name and description */
 }
 /* Responsive Design */
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
     .main-container {
         grid-template-columns: 1fr;
     }
-    .content {
+    /* .content {
         padding: 30px;
         margin: 20px;
-    }
+    } */
     .contact ul{
         display: flex;
         flex-direction: column;
@@ -230,14 +241,6 @@ section .title {
         display: flex;
         flex-direction: column;
         
-    }
-
-    header h1 {
-        font-size: 1.5em;
-    }
-
-    header h3 {
-        font-size: 0.8em;
     }
 
     .right-side, .left-side {
