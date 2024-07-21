@@ -12,7 +12,7 @@ body {
     color: #ededed;
 }
 
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -26,59 +26,79 @@ header{
 }
 
 .logo {
+    position: relative;
     font-size: 25px;
     color: #ededed;
     text-decoration: none;
     font-weight: 600;
+    transition: .3s;
 }
 
-.nav-links a{
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    font-size: 25px;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s ;
+}
+
+.nav-links a {
     font-size: 18px;
     color: #ededed;
+    margin-left: 35px;
     text-decoration: none;
     font-weight: 500;
-    transition: .3s; 
+    transition: .3s;
 }
-.nav-links a:hover{
+.logo:hover,
+.nav-links a:hover,
+.nav-links a.active-page {
     color: #00abf0;
 }
 
-.home{
+.home {
     height: 100vh;
     display: flex;
     align-items: center;
     padding: 0 10%;
 }
 
-.home-content{
+.home-content {
     max-width: 600px;
 }
 
-.home-content h1{
+.home-content h1 {
     font-size: 49px;
     font-weight: 700;
     line-height: 1.2;
 }
-.home-content h3{
+
+.home-content h3 {
     font-size: 32px;
     font-weight: 700;
     color: #00abf0;
 }
-.home-content p{
+
+.home-content p {
     font-size: 18px;
     margin: 20px 0 40px;
     text-align: justify;
 
 }
 
-.home-content .btn-box{
+.home-content .btn-box {
     display: flex;
     justify-content: space-between;
     width: 345px;
     height: 50px;
 }
 
-.home-content .btn-box a{
+.home-content .btn-box a {
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -98,25 +118,29 @@ header{
     transition: .5s;
 
 }
-.home-content .btn-box a:hover{
+
+.home-content .btn-box a:hover {
     color: #00abf0;
     border: 2px solid #00abf0;
 }
-.home-content .btn-box a:nth-child(2){
+
+.home-content .btn-box a:nth-child(2) {
     background: transparent;
     color: #00abf0;
     transition: .5s;
 }
-.home-content .btn-box a:nth-child(2):hover{
+
+.home-content .btn-box a:nth-child(2):hover {
     color: #081b29;
     border: 2px solid #00abf0;
 
 }
-.home-content .btn-box a:nth-child(2)::before{
+
+.home-content .btn-box a:nth-child(2)::before {
     background: #00abf0;
 }
 
-.home-content .btn-box a::before{
+.home-content .btn-box a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -127,23 +151,24 @@ header{
     z-index: -1;
     transition: .5s;
     border-radius: 8px;
-    
-    
+
+
 }
 
-.home-content .btn-box a:hover::before{
+.home-content .btn-box a:hover::before {
     width: 100%;
 }
 
-.home-sci{
+.home-sci {
     position: absolute;
     bottom: 40px;
     width: 140px;
     display: flex;
     justify-content: space-between;
-    
+
 }
-.home-sci a{
+
+.home-sci a {
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -161,11 +186,11 @@ header{
     transition: .5s;
 }
 
-.home-sci a:hover{
+.home-sci a:hover {
     color: #081b29;
 }
 
-.home-sci a::before{
+.home-sci a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -178,7 +203,13 @@ header{
 
 }
 
-.home-sci a:hover::before{
+.home-sci a:hover::before {
     width: 100%;
     color: #081b29;
+}
+
+@keyframes showRight {
+       100% {
+           width: 0;
+       }
 }
