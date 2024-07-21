@@ -189,7 +189,7 @@ header {
 
 .home-sci {
     position: absolute;
-    bottom: 40px;
+    bottom: 160px; /* bottom: 160px; */
     width: 140px;
     display: flex;
     justify-content: space-between;
@@ -234,6 +234,31 @@ header {
 .home-sci a:hover::before {
     width: 100%;
     color: #081b29;
+}
+
+.issue-notice{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #00abf0;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    align-items: center;
+    z-index: 100;
+}
+
+.issue-notice h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #081b29;
+}
+
+.issue-notice p {
+    font-size: 18px;
+    color: #081b29;
+
 }
 
 @keyframes showRight {
