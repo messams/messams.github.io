@@ -6,46 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="Mohamed Essam's Portfolio, Essam's Portfolio, Mohamed Essam, Mohamed Essam Saeed">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mEssam's site</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/themes.css">
+    <title>Essam's site</title>
 </head>
 
 <body>
     <header>
-        <a href="#" class="logo">m. Essam.</a>
+        <a href="#" class="logo">M. Essam.</a>
         <nav class="nav-links">
             <a href="#" class="active-page">Home</a>
             <a href="#">About</a>
             <a href="#">Portfolio</a>
             <a href="#">Services</a>
             <a href="#">contact</a>
+            <a href="javascript:void(0);" onclick="toggleDropdown()" class="dropbtn"><i class='bx bx-palette'></i></a>
+            <form id="myDropdown" class="color-picker dropdown-content">
+                <fieldset>
+                    <input type="radio" name="theme" id="default" checked>
+                    <input type="radio" name="theme" id="blue-white-grey">
+                    <input type="radio" name="theme" id="green-white-black">
+                    <input type="radio" name="theme" id="purple-white-gold">
+                    <input type="radio" name="theme" id="red-white-black">
+                    <input type="radio" name="theme" id="turquoise-white-navy">
+                    <input type="radio" name="theme" id="orange-white-grey">
+                    <input type="radio" name="theme" id="teal-white-coral">
+                    <input type="radio" name="theme" id="navyblue-gold-white">
+                    <input type="radio" name="theme" id="forest-green-beige-brown">
+                </fieldset>
+            </form>
         </nav>
     </header>
     <section class="home">
         <div class="home-content">
             <h1>Hi, I'm Mohamed Essam</h1>
             <h3>Full-Stack Engineer</h3>
-            <p>Aspiring software engineer with a focus on integrating AI models. Seeking to apply my skills in Machine Learning and Deep Learning to contribute to innovative projects. </p>
+            <p>Aspiring software engineer with a focus on integrating AI models. Seeking to apply my skills in Machine
+                Learning and Deep Learning to contribute to innovative projects. </p>
             <div class="btn-box">
                 <a href="">Hire Me</a>
                 <a href="">Let's Talk</a>
             </div>
         </div>
         <div class="home-sci">
-            <a href="https://www.linkedin.com/in/m-essam/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-            <a href="https://github.com/m-essam-s" target="_blank"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.linkedin.com/in/m-essam/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/m-essam-s" target="_blank"><i class='bx bxl-github'></i></a>
             <a href="https://x.com/m_essam_s" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
         <div class="issue-notice">
             <h3>Notice:</h3>
             <p>
-                I am currently addressing an issue with the publication of my portfolio. The problem is being fixed and the content will be available again as soon as possible. Thank you for your understanding and patience.
+                I'm currently addressing an issue with the publication of my portfolio. The problem is being fixed and
+                the content will be available again as soon as possible. Thank you for your understanding and patience.
             </p>
         </div>
     </section>
     <script src="https://kit.fontawesome.com/9f15208743.js" crossorigin="anonymous"></script>
+    <script src="./js/themes-btn.js"></script>
+    <script src="./js/themes-picker.js"></script>
 </body>
 
 </html>
