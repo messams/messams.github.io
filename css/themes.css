@@ -2,7 +2,7 @@
     border: 0;
     display: flex;
     gap: 1rem;
-    background-color: var(--tertiary-color);
+    background-color: var(--primary-color);
     width: fit-content;
     padding: 0.9rem;
     border-radius: 0.6rem;
@@ -71,52 +71,71 @@
     --secondary-color: #1E90FF;
     --primary-color: #FFFFFF;
     --tertiary-color: #D3D3D3;
+    --radio-color: var(--secondary-color);
+    --radio-bg-color: var(--tertiary-color);
 }
 
 :root:has(#green-white-black:checked) {
     --secondary-color: #32CD32;
     --primary-color: #FFFFFF;
     --tertiary-color: #000000;
+    --radio-color: var(--secondary-color);
+    --radio-bg-color: var(--tertiary-color);
+
 }
 
 :root:has(#purple-white-gold:checked) {
     --secondary-color: #800080;
     --primary-color: #FFFFFF;
     --tertiary-color: #FFD700;
+    --radio-color: var(--secondary-color);
+    --radio-bg-color: var(--tertiary-color);
 }
 
 :root:has(#red-white-black:checked) {
     --secondary-color: #FF4500;
     --primary-color: #FFFFFF;
     --tertiary-color: #000000;
+    --radio-color: var(--secondary-color);
+    --radio-bg-color: var(--tertiary-color);
 }
 
 :root:has(#turquoise-white-navy:checked) {
     --secondary-color: #40E0D0;
     --primary-color: #FFFFFF;
     --tertiary-color: #000080;
+    --radio-color: var(--secondary-color);
+    --radio-bg-color: var(--tertiary-color);
 }
 
 :root:has(#orange-white-grey:checked) {
     --secondary-color: #FFA500;
     --primary-color: #FFFFFF;
     --tertiary-color: #A9A9A9;
+    --radio-color: var(--secondary-color);
+    --radio-bg-color: var(--tertiary-color);
 }
 
 :root:has(#teal-white-coral:checked) {
     --secondary-color: #008080;
     --primary-color: #FFFFFF;
     --tertiary-color: #FF7F50;
+    --radio-color: var(--secondary-color);
+    --radio-bg-color: var(--tertiary-color);
 }
 
 :root:has(#navyblue-gold-white:checked) {
     --secondary-color: #000080;
-    --primary-color: #FFD700;
-    --tertiary-color: #FFFFFF;
+    --primary-color: #FFF;
+    --tertiary-color: #FFD700;
+    --radio-color: var(--secondary-color);
+    --radio-bg-color: var(--tertiary-color);
 }
 
 :root:has(#forest-green-beige-brown:checked) {
     --secondary-color: #228B22;
     --primary-color: #F5F5DC;
     --tertiary-color: #8B4513;
+    --radio-color: var(--secondary-color);
+    --radio-bg-color: var(--tertiary-color);
 }

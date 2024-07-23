@@ -96,7 +96,6 @@ header {
     right: 200px;
     top: 80px;
     background-color: transparent;
-    box-shadow: 0px 8px 16px 0px var(--secondary-color);
     z-index: 1;
     
 }
@@ -107,17 +106,4 @@ header {
 
 .dropdown-content input[type="radio"] {
     display: inline-block;
-}
-
-.dropdown-content input[type="radio"]+label {
-    cursor: pointer;
-    padding: 5px;
-    
-    border-radius: 5px;
-    margin: 5px;
-}
-
-.dropdown-content input[type="radio"]:checked+label {
-    background-color: #007bff;
-    color: #fff;
 }
