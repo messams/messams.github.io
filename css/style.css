@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    /* Colors */
+    /* Headers, text, */
+    --primary-color: #ededed;
+    /* Background, buttons, links */
+    --secondary-color: #081b29;
+    /* Buttons, links hover */
+    --tertiary-color: #00abf0;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--secondary-color);
+    font-size: 25px;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.nav-links a {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-left: 35px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+}
+
+
+.logo:hover,
+.nav-links a:hover,
+.nav-links a.active-page {
+    color: var(--tertiary-color);
+}
+
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 200px;
+    top: 80px;
+    background-color: transparent;
+    box-shadow: 0px 8px 16px 0px var(--secondary-color);
+    z-index: 1;
+    
+}
+
+.dropdown-content fieldset {
+    border: none;
+}
+
+.dropdown-content input[type="radio"] {
+    display: inline-block;
+}
+
+.dropdown-content input[type="radio"]+label {
+    cursor: pointer;
+    padding: 5px;
+    
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.dropdown-content input[type="radio"]:checked+label {
+    background-color: #007bff;
+    color: #fff;
+}
