@@ -1,5 +1,4 @@
 .home {
-    height: 100vh;
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -125,13 +124,9 @@
 }
 
 .home-sci {
-    position: absolute;
-    bottom: 160px;
-    /* bottom: 160px; */
-    width: 140px;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
-
 }
 
 .home-sci a {

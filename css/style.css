@@ -8,7 +8,16 @@
     --secondary-color: #081b29;
     /* Buttons, links hover */
     --tertiary-color: #00abf0;
+}
 
+:root {
+    /* Colors */
+    /* Headers, text, */
+    --primary-color: #ededed;
+    /* Background, buttons, links */
+    --secondary-color: #000000;
+    /* Buttons, links hover */
+    --tertiary-color: #00bbff;
 }
 
 * {
@@ -16,25 +25,103 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
+    display: inline-flex;
     background-color: var(--secondary-color);
     color: var(--primary-color);
+    height: 100vh;   
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    background: transparent;
+    border: var(--tertiary-color) 1px solid;
+    border-radius: 10px;
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px;
+    transition: .3s;
+    width: 100%;
+}
+
+nav a:hover {
+    color: var(--tertiary-color);
+}
+
+.layout{
+    display: flex;
+    flex-direction: column;
+    
+    background: transparent;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10%;
-    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    padding: 10px;
+    margin: 10px 10px 10px 0px; 
+    background: transparent;
+    border: var(--tertiary-color) 1px solid;
+    border-radius: 10px;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0px 10px 10px 0px;
+    background: transparent;
+    border: var(--tertiary-color) 1px solid;
+    border-radius: 10px;
+    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+    scrollbar-width: thin;
+    scrollbar-color: var(--tertiary-color) var(--secondary-color);
+}
+
+section{
+    
+    padding: 10px;
+    margin: 10px;
+    background: transparent;
+    min-height: 100vh;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+
 
 .logo {
     position: relative;
@@ -75,15 +162,7 @@ header {
 }
 
 
-.visually-hidden {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-}
+
 
 
 .dropbtn {
@@ -106,4 +185,4 @@ header {
 
 .dropdown-content input[type="radio"] {
     display: inline-block;
-}
+} 
