@@ -18,6 +18,8 @@
     --secondary-color: #000000;
     /* Buttons, links hover */
     --tertiary-color: #00bbff;
+    /* widgets, cards, */
+    --quaternary-color: #c4c4c4;
 }
 
 * {
@@ -40,13 +42,13 @@ nav {
     flex-direction: column;
     padding: 10px;
     margin: 10px;
-    background: transparent;
+    background: var(--quaternary-color);
     border: var(--tertiary-color) 1px solid;
     border-radius: 10px;
 }
 
 nav a {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
