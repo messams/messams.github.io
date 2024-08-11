@@ -13,7 +13,7 @@ This is the portfolio website for Mohamed Essam, a Software Engineering student 
 
 ## Demo
 
-You can view the portfolio website live at: [Live Demo](#).
+You can view the portfolio website live at: [Live Demo](https://m-essam-s.github.io/).
 
 ## Features
 
