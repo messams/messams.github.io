@@ -1,0 +1,31 @@
+:root {
+    --grid-unit: 1rem;
+    --border-radius-base: 0.5rem;
+}
+
+[data-theme="light"] {
+    --font-color: black;
+    --secondary-font-color: rgb(187, 187, 187);
+    --bg-color: white;
+    --ico-color: #00abf0;
+    --ternary-color: #00abf0;
+    --quaternary-color: #f000e4;
+}
+
+[data-theme="dark"] {
+    --font-color: white;
+    --secondary-font-color: rgb(187, 187, 187);
+    --bg-color: black;
+    --ico-color: #00abf0;
+    --ternary-color: #f000e4;
+    --quaternary-color: #00abf0;
+}
+
+.theme-notifier button {
+    transition: all var(--global-transition-time) ease-in-out;
+    cursor: pointer;
+    color: var(--color-fg);
+    padding-top: 0.5rem;
+    background-color: transparent;
+    border: none;
+}
