@@ -1,6 +1,6 @@
-# Mohamed Essam's Portfolio
+# This Is Mohamed Essam
 
-This is the portfolio website for Mohamed Essam, a Software Engineering student at King Salman International University (KSIU). The website showcases Mohamed's contact information, education, skills, interests, experience, and projects.
+This is the website for Mohamed Essam, Aspiring software engineer with a focus on integrating AI models. Seeking to apply my skills in Machine Learning and Deep Learning to contribute to innovative projects.
 
 ## Table of Contents
 
@@ -13,7 +13,7 @@ This is the portfolio website for Mohamed Essam, a Software Engineering student 
 
 ## Demo
 
-You can view the portfolio website live at: [Live Demo](https://m-essam-s.github.io/).
+You can view the portfolio website live at: [Live Demo](https://m-essam-s.github.io).
 
 ## Features
 
@@ -21,13 +21,15 @@ You can view the portfolio website live at: [Live Demo](https://m-essam-s.github
 - Responsive layout
 - Contact information with clickable links
 - Detailed sections for education, skills, interests, experience, and projects
+- Smooth scrolling effect
 
 ## Technologies
 
 - HTML5
 - CSS3
+- JavaScript
 - [Font Awesome](https://cdnjs.com/libraries/font-awesome) for icons
-- Google Fonts (Poppins)
+- [Google Fonts](https://fonts.google.com/) for fonts
 
 ## Setup
 
@@ -36,13 +38,13 @@ To set up this project locally, follow these steps:
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/yourusername/portfolio.git
+    git clone https://github.com/m-essam-s/m-essam-s.github.io.git
     ```
 
 2. Navigate to the project directory:
 
     ```sh
-    cd portfolio
+    cd m-essam-s.github.io
     ```
 
 3. Open `index.html` in your browser to view the portfolio.
