@@ -291,4 +291,10 @@ section.home.active .home-content {
     color: var(--secondary-font-color);
     font-style: italic;
 }
+.issue-notice a {
+    text-decoration: none;
+    color: var(--ternary-color);
+    font-weight: 600;
+    font-style: italic;
+}
 /* end-issue notice */
